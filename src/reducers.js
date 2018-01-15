@@ -53,5 +53,6 @@ export default rootReducer;
 
     每个 reducer 只负责管理全局 state 中它负责的一部分。
     每个 reducer 的 state 参数都不同，分别对应它管理的那部分 state 数据。
+    一个reducer就是一个state对象，所有的state对象合并成一个唯一的state.
 */
 
