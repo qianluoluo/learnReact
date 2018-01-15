@@ -22,7 +22,7 @@ import {ADD, DELETE, ONE, TWO} from './actions'
     }
 }
 
-function computed(state = { floor:'fourth' }, action){
+function computed(state = { floor:'second' }, action){
     switch(action.type){
         case ONE: 
             return Object.assign({}, state, {
