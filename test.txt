@@ -1,6 +1,0 @@
-redux
-react
-react-router
-vue
-vue-router
-vue-resources
