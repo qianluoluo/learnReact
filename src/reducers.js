@@ -7,7 +7,7 @@ import {ADD, DELETE, ONE, TWO} from './actions'
                    state 对象的结构由传入的多个 reducer 的 key 决定
 */
 
- function test(state = {}, action){
+ function test(state = { counter: 88 }, action){
     switch(action.type){
         case ADD: 
             return Object.assign({}, state, {
@@ -22,7 +22,7 @@ import {ADD, DELETE, ONE, TWO} from './actions'
     }
 }
 
-function computed(state = {}, action){
+function computed(state = { floor:'fourth' }, action){
     switch(action.type){
         case ONE: 
             return Object.assign({}, state, {

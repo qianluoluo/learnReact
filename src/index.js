@@ -8,16 +8,8 @@ import '../node_modules/antd/dist/antd.css'
 import registerServiceWorker from './registerServiceWorker';
 import './static/css/main.css'
 
-const initState = {
-    test:{
-        counter: 90
-    },
-    computed:{
-        floor:'third'
-    }
-}
-
-const store = createStore(rootReducer, initState);
+// window.STATE_FROM_SERVER表示整个状态树的初始值。
+const store = createStore(rootReducer, window.STATE_FROM_SERVER);
 
 // 将react根节点渲染到index.html里的根节点
 ReactDOM.render(
